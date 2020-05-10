@@ -50,6 +50,9 @@ public class GameMenu : MonoBehaviour
 
     public void Generate()
     {
+        //Проверка на Shuffle
+        if (!Letter.EnableForAnimation)
+            return;
         //Площадь
         int P = width * height; 
         if (P < 1)
